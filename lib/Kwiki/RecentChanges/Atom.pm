@@ -7,7 +7,7 @@ use Kwiki::Installer '-base';
 use XML::Atom::Feed;
 use XML::Atom::Entry;
 
-our $VERSION = "0.01";
+our $VERSION = "0.02";
 
 const class_id        => 'RecentChangesAtom';
 const class_title     => 'RecentChangesAtom';
@@ -115,13 +115,13 @@ __config/atom.yaml__
 atom_title: a title goes here
 __template/tt2/atom_button.html__
 <!-- BEGIN atom_button.html -->
-<a href="[% script_name %]?action=RecentChangesAtom" accesskey="c" title="Atom">
+<a href="[% script_name %]?action=RecentChangesAtom" accesskey="a" title="Atom">
 [% INCLUDE atom_button_icon.html %]
 </a>
 <!-- END atom_button.html -->
 __template/tt2/atom_button_icon.html__
 <!-- BEGIN atom_button_icon.html -->
-<img src="icons/atom.png" alt="atom" >
+<img src="icons/atom.png" alt="atom" />
 <!-- END atom_button_icon.html -->
 __template/tt2/atom_screen.xml__
 [% xml %]
