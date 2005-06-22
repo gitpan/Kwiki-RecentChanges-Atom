@@ -7,7 +7,7 @@ use Kwiki::Installer '-base';
 use XML::Atom::Feed;
 use XML::Atom::Entry;
 
-our $VERSION = "0.02";
+our $VERSION = "0.03";
 
 const class_id        => 'RecentChangesAtom';
 const class_title     => 'RecentChangesAtom';
@@ -60,11 +60,11 @@ Kwiki::RecentChanges::Atom - Kwiki Plugin to create an Atom feed of recent chang
 
 =head1 VERSION
 
-Version 0.01
+Version 0.03
 
 =head1 SYNOPSIS
 
- $ cpan Kwiki::Icons::Gnome
+ $ cpan Kwiki::RecentChanges::Atom
  $ cd /path/to/kwiki
  $ vim plugins
  $ kwiki -update
@@ -102,7 +102,7 @@ L<Kwiki>, L<XML::Atom>
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2004 Steve Peters, All Rights Reserved.
+Copyright 2004-5 Steve Peters, All Rights Reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
